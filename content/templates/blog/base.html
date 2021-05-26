@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>{% block title %}
+
+	{% endblock title %}
+	</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+	</head>
+	<body>
+		<div id="content">
+			{% block content %}
+            
+            {% endblock content %}
+		</div>
+		<div id="sidebar">
+			<h3>Top Stories</h3>
+			<p>Top stories by our top writers </p>
+		</div>
+	</body>
+</html>    
